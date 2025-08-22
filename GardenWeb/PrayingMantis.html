@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praying Mantis - Learn More</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { text-align: center; color: #2d4028; font-size: 18px; background-color: #f5faf5; font-family: Arial, Helvetica, sans-serif; }
+
+    /* Banner */
+    .banner {
+        background-image: url('GardenDwellersBanner.png');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+    .banner span { font-size: 20px; font-weight: normal; margin-top: 5px; }
+
+    /* Navbar */
+    nav { margin: 0; }
+    .Navbar { display: flex; justify-content: center; overflow: hidden; background-color: #355e3b; }
+    .Navbar a { color: #e9f5ea; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px; transition: 0.3s; }
+    .Navbar a:hover { background-color: #6fa66f; color: #ffffff; }
+
+    /* Animal Content */
+    .animal-container { max-width: 900px; margin: 40px auto; padding: 30px; background-color: #ffffff; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); display: flex; flex-direction: row; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+    .animal-image img { width: 300px; height: 300px; object-fit: cover; border-radius: 10px; border: 2px solid #80aa91; }
+    .animal-text { max-width: 550px; text-align: left; }
+    .animal-text h2 { margin-bottom: 10px; color: #355e3b; }
+    .animal-text p { margin-bottom: 15px; line-height: 1.5; }
+    .info-box { background-color: #e9f5ea; padding: 10px 15px; border-left: 5px solid #355e3b; margin: 10px 0; border-radius: 5px; }
+    .animal-gallery { display: flex; justify-content: start; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+    .animal-gallery img { width: 120px; height: 120px; object-fit: cover; border-radius: 10px; border: 2px solid #80aa91; transition: transform 0.3s; cursor: pointer; }
+    .animal-gallery img:hover { transform: scale(1.1); }
+    .animal-text h3 { margin-top: 20px; color: #355e3b; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .animal-container { flex-direction: column; text-align: center; }
+        .animal-text { max-width: 100%; }
+        .animal-image img { width: 80%; height: auto; }
+        .animal-gallery { justify-content: center; }
+    }
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <span></span>
+</div>
+
+<nav>
+    <div class="Navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="Mammals.html">Mammals</a>
+        <a href="Insects.html">Insects</a>
+        <a href="Birds.html">Birds</a>
+    </div>
+</nav>
+
+<section class="animal-container">
+    <div class="animal-image">
+        <img src="PrayingMantis1.jpg" alt="Praying Mantis">
+    </div>
+    <div class="animal-text">
+        <h2>Praying Mantis</h2>
+        <p>Praying mantises are fascinating predatory insects found in New Zealand gardens. They are known for their “praying” stance, long limbs, and excellent camouflage. Mantises feed on other insects, helping control pest populations naturally.</p>
+
+        <div class="info-box">🌿 <strong>Habitat:</strong> Gardens, shrubs, and plants with plenty of insects to hunt.</div>
+        <div class="info-box">🌞 <strong>Active Time:</strong> Diurnal; mostly active during the day.</div>
+        <div class="info-box">⚠️ <strong>What to Do if Found:</strong> Observe without touching. Avoid handling, as it can stress the mantis. They are beneficial for your garden!</div>
+
+        <h3>Gallery</h3>
+        <div class="animal-gallery">
+            <img src="Mantis2.jpg" alt="Praying Mantis on leaf">
+            <img src="Mantis3.jpeg" alt="Close-up of Praying Mantis">
+            <img src="Mantis4.jpg" alt="Praying Mantis hunting">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body { 
+        text-align: center;
+        color: #2d4028; 
+        font-size: 18px;
+        background-color: #f5faf5; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Banner */
+    .banner {
+        background-image: url('/Users/cristalmiranda/Desktop/GardenWeb/GardenDwellersBanner.png'); 
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    /* Navbar */
+    nav {
+        margin: 0;
+    }
+
+    .Navbar {
+        display: flex; 
+        justify-content: center;
+        overflow: hidden;
+        background-color: #355e3b;
+    }
+
+    .Navbar a {
+        color: #e9f5ea;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+
+    .Navbar a:hover {
+        background-color: #6fa66f;
+        color: #ffffff;
+    }
+
+    /* Sections */
+    section {
+        max-width: 900px;      
+        margin: 40px auto;       
+        padding: 30px 20px;      
+        border-radius: 20px;       
+        background-color: #ffffff;  
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px; 
+        flex-wrap: wrap;
+    }
+
+    .image img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #80aa91;
+    }
+
+    .text {
+        max-width: 600px;
+        text-align: left;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #355e3b;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .banner {
+            font-size: 2rem;
+            height: 25vh;
+        }
+
+        .Navbar a {
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .about-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text {
+            max-width: 100%;
+        }
+
+        .image img {
+            width: 70%;
+            max-width: 250px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .banner {
+            font-size: 1.5rem;
+            height: 20vh;
+        }
+
+        .Navbar {
+            flex-direction: column;
+        }
+
+        .Navbar a {
+            padding: 8px;
+            font-size: 0.875rem;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="banner">
+     </div>
+
+    <nav>
+        <div class="Navbar">
+            <a href="HomePage.html">Home</a>
+            <a href="Mammals.html">Mammals</a>
+            <a href="Birds.html">Birds</a>
+            <a href="Insects.html">Insects</a>
+        </div>  
+    </nav>
+
+    <section>
+        <h2>Purpose</h2>
+        <div class="about-content">
+            <div class="image">
+                <img src="/Users/cristalmiranda/Desktop/GardenWeb/Sparrow.jpg" alt="Sparrow">
+            </div>
+            <div class="text">
+                <p>This website is designed to educate people about the animals that live in New Zealand gardens. You can learn to identify common birds, mammals, and insects, understand their behaviors and habitats, and discover ways to protect and care for them. The goal is to inspire curiosity, appreciation, and respect for the wildlife that shares our backyards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="image">
+                <img src="/Users/cristalmiranda/Desktop/GardenWeb/Butterfly.jpg" alt="Butterfly">
+            </div>
+            <div class="text">
+                <p>Garden Dwellers NZ aims to inspire curiosity and appreciation for the wildlife around us. Through photos, facts, and helpful tips, you’ll learn how to identify animals, understand their behaviors, and discover ways to protect them. Our goal is to make learning about garden animals fun, interactive, and engaging for everyone.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
